@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Project Zenith|Documentation</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+      <style>
+        html, body {
+            background-image: url("http://bsnscb.com/data/out/16/27143465-basic-wallpapers.jpg");
+        }
+        </style>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Project Zenith</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Documentation <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Github</a>
+                    <a class="nav-item nav-link" href="#">Branches</a>
+                    <a class="nav-item nav-link" href="#">Gitter</a>
+                  </div>
+                  <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </form>
+                </div>
+
+              </nav>
+    <main>
+        <div class="container">
+            <h2>Project Zenith</h2>
+            <h5>An expandable Client side framework for Garrys Mod.</h5>
+        </div>
+
+        <div class="container">
+            <div class="row">
+            <div class="col-sm">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;min-height:15rem;">
+                    <div class="card-header">Documentation Rule #1</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Readability</h5>
+                      <p class="card-text">Make projects so that other devs can easily read you'r source and learn from it.</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="col-sm">
+                  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;min-height:15rem;">
+                        <div class="card-header">Documentation Rule #2</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Comment Usage</h5>
+                          <p class="card-text">Make comments on whats being done and how its being completed.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;min-height:15rem;">
+                            <div class="card-header">Documentation Rule #3</div>
+                            <div class="card-body">
+                              <h5 class="card-title">Deprecations</h5>
+                              <p class="card-text">Make sure to update whats supported on the current version unlike <s>Bloatware</s>.</p>
+                            </div>
+                          </div>
+                        </div>
+                          <div class="col-sm">
+                          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;min-height:15rem;">
+                                <div class="card-header">Documentation Rule #4</div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Future Updates</h5>
+                                  <p class="card-text">Log whats coming in the future with some sort of teaser description.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+        <div class="card text-left">
+          <div class="card-body">
+            <h4 class="card-title text-center">Part 1: Requirements</h4>
+            <hr>
+            <p class="card-text">&#8226; Text Editor that support Lua/Glua</p>
+            <p class="card-text">&#8226; Github/Git client</p>
+          </div>
+        </div>
+        <div class="spacer" style="margin-bottom: 3rem;"></div>
+        <div class="card text-left">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Part 2: Syntax and Order</h4>
+                  <hr>
+                  <p class="card-text">&#8226; Check your syntax with the offical GLua Documentation. </p>
+                  <a href="http://wiki.garrysmod.com/" class="btn btn-primary">Visit the Wiki</a>
+                  <p class="card-text">&#8226; Make all changes in the "Staging" Branch First.</p>
+                  <p class="card-text">&#8226; Contribute in snippets and small patches instead of large overhauls.</p>
+                  <p class="card-text">&#8226; Staircase all code in an even "cascading" style.</p>
+                </div>
+              </div>
+              <div class="card text-left">
+                <div class="card-body">
+                  <h4 class="card-title">http.Fetch </h4>
+                  <p class="card-text">We currently use this as a way to fetch data from our Github to the client/user.</p>
+                  <p class="card-text"> <div style="background: #202020; overflow:auto;width:auto;border:solid gray;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">http.Fetch(</span><span style="color: #ed9d13">&quot;URL&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">function</span><span style="color: #d0d0d0">(ret)</span> <span style="color: #d0d0d0">RunString(ret)</span> <span style="color: #6ab825; font-weight: bold">end</span><span style="color: #d0d0d0">)</span> <span style="color: #6ab825; font-weight: bold">end</span><span style="color: #d0d0d0">)</span>
+                    <span style="color: #999999; font-style: italic">--URL (Where the desired target location is must be raw text).</span>
+                    <span style="color: #999999; font-style: italic">-- Function (Http fetch/get is a valid function) the &quot;ret&quot; returns the text from the fetch request.</span>
+                    <span style="color: #999999; font-style: italic">-- Runstring simple computes the variable &quot;ret&quot; which was just defined.</span>
+                    </pre></div>
+                    </p>
+                </div>
+              </div>
+              <div class="card text-left">
+                <div class="card-body">
+                  <h4 class="card-title">chat.AddText()</h4>
+                  <p class="card-text"><div style="background: #202020; overflow:auto;width:auto;border:solid gray;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">chat.AddText(</span> <span style="color: #d0d0d0">RGB,</span> <span style="color: #ed9d13">&quot;Text&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">RGB,</span> <span style="color: #ed9d13">&quot;Text 2&quot;</span><span style="color: #d0d0d0">)</span>
+                    <span style="color: #999999; font-style: italic">-- With the chat.AddText we can use this to display output to the user however, we can also use this as a form of bug testing to see what part of the code isn&#39;t working.</span>
+                    <span style="color: #999999; font-style: italic">-- The syntax is very lenient here you can print just text and the color will be the default light blue or you can create a color and use that. Also, the text inside can have spaces, dashes etc. just make sure to use commas if there needs to multiple colors/sections that need color.</span>
+                    </pre></div>
+                    </p>
+                </div>
+              </div>
+              <div class="card text-left">
+                <div class="card-body">
+                  <h4 class="card-title">Color</h4>
+                  <p class="card-text"><div style="background: #202020; overflow:auto;width:auto;border:solid gray;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">Maroon</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">128</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
+                    <span style="color: #999999; font-style: italic">-- In Glua all colors are either RGB or RGBA, most use the RGBA so We&#39;ve created a huge list of colors that might have what you&#39;re looking for.</span>
+                    <span style="color: #999999; font-style: italic">-- by creating the varible Maroon we can say: so whenever Maroon is called or mentioned use X Y Z and W values assigned to give the desired color.</span>
+                    </pre></div>
+                    
+                    </p>
+                </div>
+                <div class="card-body">
+                  <a href="https://github.com/Yeehawlerz101/GmodColors/blob/master/GmodColors.lua" class="card-link">Visit the Color Repo</a>
+                  <a href="#" class="card-link"></a>
+                </div>
+              </div>
+    </main>
+    <script src="https://use.fontawesome.com/b6db600c62.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
