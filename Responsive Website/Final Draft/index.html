@@ -6,26 +6,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <link rel="stylesheet" href="prism.css">
+  
+    <style>
+      span {
+        margin: 0px;
+        padding: 0px;
+        
+      }
+      body { 
+        height: 100%;
+        width: 100%;
+        background-color: black;
+       background: url(http://www.baltana.com/files/wallpapers-7/Material-Design-Dark-HD-Background-Wallpaper-23173.png);
+        background-size: 100% 100%;
+        
+        
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;}
+        .white {
+          color: white;
+        }
+        .card {
+          box-shadow: 3px 5px 5px rgb(0, 0, 0);
+        }
+      </style>
+  
+  
   </head>
+  
   <body>
-      <style>
-        body { 
-          height: 100%;
-          width: 100%;
-          background-color: black;
-         background: url(https://www.planwallpaper.com/static/images/kartandtinki1_photo-wallpapers_02.jpg);
-          background-size: 100% 100%;
-          
-          
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;}
-          .white {
-            color: white;
-          }
-        </style>
-        <script>hljs.initHighlightingOnLoad();</script>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Project Zenith</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +54,8 @@ background-repeat: no-repeat;}
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                       </form>
                 </div>
-              </nav>
+          </nav>
     <main>
-
-
         <div class="container">
             <h1 class="display-2 white">Project Zenith</h1>
             <h5 class="white">An expandable Client side framework for Garrys Mod.</h5>
@@ -62,7 +71,6 @@ background-repeat: no-repeat;}
                     </div>
                   </div>
                 </div>
-            
                 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                   <div class="card text-white bg-dark mb-3" style="max-width: 18rem;min-height:15rem;">
                         <div class="card-header">Documentation Rule #2</div>
@@ -94,8 +102,8 @@ background-repeat: no-repeat;}
                                 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;min-height:15rem;">
                                       <div class="card-header">Documentation Rule #5</div>
                                       <div class="card-body">
-                                        <h5 class="card-title">Use caution/Testing feautures sparingly</h5>
-                                        <p class="card-text">We dont need thirty test branches for new features when none of them work.</p>
+                                        <h5 class="card-title">Use of caution/Testing Branches</h5>
+                                        <p class="card-text">We dont need branches for broken features.</p>
                                       </div>
                                     </div>
                                   </div>
@@ -108,19 +116,26 @@ background-repeat: no-repeat;}
                                             </div>
                                           </div>
                                         </div>
-                        </div>
-                    </div>
+                                  </div>
+                                 </div>
                     <div class="card">
                         <div class="card-body">
                           <blockquote class="blockquote">
                             <p>"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."</p>
                             <footer class="card-blockquote"> - Patrick McKenzie</footer>
                           </blockquote>
+                          <img src="https://imgs.xkcd.com/comics/good_code.png" class="img-fluid rounded mx-auto d-block" alt="Xkcd Comic">
                         </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Submit Feedback</label>
+                            <textarea class="form-control mx-auto" id="exampleFormControlTextarea1" rows="2"></textarea>
+                          </div>
+                          <a href="*" class="btn btn-success mx-auto">Submit</a>
                       </div>
                       <div class="container">
                       <div class="row">
-                      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                      <div class="col-sm-5 col-md-5 col-lg-10 col-xl-10 mx-auto">
         <div class="card text-left">
           <div class="card-body">
             <h4 class="card-title text-center">Part 1: Requirements</h4>
@@ -134,10 +149,11 @@ background-repeat: no-repeat;}
       </div>
     </div>
   </div>
+
         <div class="spacer" style="margin-bottom: 3rem;"></div>
         <div class="container">
             <div class="row">
-            <div class="col-sm-5 col-md-6 col-lg-6 col-xl-6 ">
+            <div class="col-sm-5 col-md-5 col-lg-10 col-xl-10 mx-auto">
         <div class="card text-left">
                 <div class="card-body">
                   <h4 class="card-title text-center">Part 2: Syntax and Order</h4>
@@ -154,49 +170,54 @@ background-repeat: no-repeat;}
                 <div class="card-body">
                   <h4 class="card-title">http.Fetch </h4>
                   <p class="card-text">We currently use this as a way to fetch data from our Github to the client/user.</p>
-                  <p class="card-text"> <div style="background: #202020; overflow:auto;width:auto;border:solid gray;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">http.Fetch(</span><span style="color: #ed9d13">&quot;URL&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">function</span><span style="color: #d0d0d0">(ret)</span> <span style="color: #d0d0d0">RunString(ret)</span> <span style="color: #6ab825; font-weight: bold">end</span><span style="color: #d0d0d0">)</span> <span style="color: #6ab825; font-weight: bold">end</span><span style="color: #d0d0d0">)</span>
-                    <span style="color: #999999; font-style: italic">--URL (Where the desired target location is must be raw text).</span>
-                    <span style="color: #999999; font-style: italic">-- Function (Http fetch/get is a valid function) the &quot;ret&quot; returns the text from the fetch request.</span>
-                    <span style="color: #999999; font-style: italic">-- Runstring simple computes the variable &quot;ret&quot; which was just defined.</span>
-                    </pre></div>
-                    </p>
+                  <pre class="language-lua  line-numbers"><code>http.Fetch("URL", function(ret) RunString(ret) end) end)
+--URL (Where the desired target location is must be raw text).
+-- Function (Http fetch/get is a valid function) the "ret" returns the text from the fetch request.
+-- Runstring simple computes the variable "ret" which was just defined.</code></pre>
                 </div>
               </div>
               <div class="card text-left">
                 <div class="card-body">
                   <h4 class="card-title">chat.AddText()</h4>
-                  <p class="card-text"><div style="background: #202020; overflow:auto;width:auto;border:solid gray;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">chat.AddText(</span> <span style="color: #d0d0d0">RGB,</span> <span style="color: #ed9d13">&quot;Text&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">RGB,</span> <span style="color: #ed9d13">&quot;Text 2&quot;</span><span style="color: #d0d0d0">)</span>
-                    <span style="color: #999999; font-style: italic">-- With the chat.AddText we can use this to display output to the user however, we can also use this as a form of bug testing to see what part of the code isn&#39;t working.</span>
-                    <span style="color: #999999; font-style: italic">-- The syntax is very lenient here you can print just text and the color will be the default light blue or you can create a color and use that. Also, the text inside can have spaces, dashes etc. just make sure to use commas if there needs to multiple colors/sections that need color.</span>
-                    </pre></div>
+                  <p class="card-text"> <pre class="language-lua  line-numbers"><code>chat.AddText( RGB, "Text", RGB, "Text 2")
+-- With the chat.AddText we can use this to display output to the user however, we can also use this as a form of bug testing to see what part of the code isn't working.
+-- The syntax is very lenient here you can print just text and the color will be the default light blue or you can create a color and use that. Also, the text inside can have spaces, dashes etc. just make sure to use commas if there needs to multiple colors/sections that need color.</code></pre>
                     </p>
                 </div>
               </div>
               <div class="card text-left">
                 <div class="card-body">
                   <h4 class="card-title">Color</h4>
-                  <p class="card-text"><div style="background: #202020; overflow:auto;width:auto;border:solid gray;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">Maroon</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">128</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #999999; font-style: italic">-- In Glua all colors are either RGB or RGBA, most use the RGBA so We&#39;ve created a huge list of colors that might have what you&#39;re looking for.</span>
-                    <span style="color: #999999; font-style: italic">-- by creating the varible Maroon we can say: so whenever Maroon is called or mentioned use X Y Z and W values assigned to give the desired color.</span>
-                    </pre></div>
-                    
+                  <p class="card-text">
+                    <pre class="language-lua  line-numbers"><code>-- Examples of setting variblae names to color values.
+MintCream = Color(245,255,250,255);
+SlateGray = Color(112,128,144,255);
+LightSlateGray = Color(176,196,222,255);
+LightSteelBlue = Color(119,136,153,255);
+Lavender = Color(230,230,250,255);
+FloralWhite = Color(255,250,240,255);
+AliceBlue = Color(240,248,255,255);
+GhostWhite = Color(248,248,255,255);
+Honeydew = Color(240,255,240,255);
+Ivory = Color(255,255,240,255);
+Azure = Color(255,250,250,255);
+Snow = Color(255,250,250,255);
+DimGray = Color(255,165,0,255);
+Gray = Color(128,128,128,255);
+DarkGray = Color(169,169,169,255);
+Silver = Color(192,192,192,255);
+LightGray = Color(211,211,211,255);
+Gainsboro = Color(220,220,220,255);
+WhiteSmoke = Color(245,245,245,255);
+                    </code></pre>
                     </p>
                 </div>
                 <div class="card-body">
                   <p class="card-text">Other Colors</p>
                   <p class="card-text">
-                    <div style="background: #202020;border:solid gray;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
-                    <span style="color: #d0d0d0">Green</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">128</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">ForestGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">34</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">139</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">34</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">Lime</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">LimeGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">50</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">205</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">50</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">LightGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">144</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">238</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">144</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">PaleGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">152</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">251</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">152</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">DarkSeaGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">143</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">188</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">143</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">MediumSpringGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">250</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">154</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">SpringGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">127</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    <span style="color: #d0d0d0">SeaGreen</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Color(</span><span style="color: #3677a9">46</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">139</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">87</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">255</span><span style="color: #d0d0d0">);</span>
-                    </pre></div>
+                    <pre class="language-lua  line-numbers"><code>DarkGreen = Color(0,100,0,255);
+-- In Glua all colors are either RGB or RGBA, most use the RGBA so We've created a huge list of colors that might have what you're looking for.
+-- by creating the varible DarkGreen we can say: so whenever DarkGreen is called or mentioned use X Y Z and W values assigned to give the desired color.</code></pre>
                     </p>
                   <a href="https://github.com/Yeehawlerz101/GmodColors/blob/master/GmodColors.lua" class="card-link">Visit the Color Repo</a>
                 </div>
@@ -204,49 +225,57 @@ background-repeat: no-repeat;}
               <br>
               <div class="card text-center">
                 <div class="card-body">
-                  <h4 class="card-title">Snippets of code</h4>
-                  <p class="card-text">Example Functions and appearance of Glua.</p>
+                  <h4 class="card-title"></h4>
+
                 </div>
               </div>
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Functions</h4>
-                  <div style="background: #202020; overflow:auto;width:auto;border:solid gray;" style="text-align:left;"><pre style="margin: 0; line-height: 125%"> 
-                      <span style="color: #999999; font-style: italic">-- print(gmod.GetGamemode().Name) -- this is to code/find names for gamemodes :D</span>
-                      <span style="color: #d0d0d0">CreateClientConVar(</span> <span style="color: #ed9d13">&quot;PZGameMode&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #ed9d13">&quot;0&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">false</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">false</span> <span style="color: #d0d0d0">)</span> <span style="color: #999999; font-style: italic">-- create a variable that we can use to select what gamemode the player is in.</span>
-                          <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">gmod.GetGamemode().Name</span> <span style="color: #d0d0d0">==</span> <span style="color: #ed9d13">&quot;Sandbox&quot;</span> <span style="color: #6ab825; font-weight: bold">then</span> 
-                            <span style="color: #d0d0d0">PZGameMode</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span>
-                            <span style="color: #d0d0d0">chat.AddText(</span> <span style="color: #d0d0d0">White,</span> <span style="color: #ed9d13">&quot;{Project-Zenith} &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">Blue,</span> <span style="color: #ed9d13">&quot;Looks like youre running &quot;</span><span style="color: #d0d0d0">..</span><span style="color: #24909d">tostring</span><span style="color: #d0d0d0">(gmod.GetGamemode().Name)</span> <span style="color: #d0d0d0">)</span>
-                      
-                          <span style="color: #6ab825; font-weight: bold">elseif</span> <span style="color: #d0d0d0">gmod.GetGamemode().Name</span> <span style="color: #d0d0d0">==</span> <span style="color: #ed9d13">&quot;DakrRP&quot;</span> <span style="color: #6ab825; font-weight: bold">then</span> <span style="color: #24909d">print</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;.&quot;</span><span style="color: #d0d0d0">)</span>
-                            <span style="color: #d0d0d0">PZGameMode</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">2</span>
-                            <span style="color: #d0d0d0">chat.AddText(</span> <span style="color: #d0d0d0">White,</span> <span style="color: #ed9d13">&quot;{Project-Zenith} &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">Blue,</span> <span style="color: #ed9d13">&quot;Looks like youre running &quot;</span><span style="color: #d0d0d0">..</span><span style="color: #24909d">tostring</span><span style="color: #d0d0d0">(gmod.GetGamemode().Name)</span> <span style="color: #d0d0d0">)</span>
-                      
-                          <span style="color: #6ab825; font-weight: bold">elseif</span> <span style="color: #d0d0d0">gmod.GetGamemode().Name</span> <span style="color: #d0d0d0">==</span> <span style="color: #ed9d13">&quot;Trouble in Terrorist Town&quot;</span> <span style="color: #6ab825; font-weight: bold">then</span> <span style="color: #24909d">print</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;.&quot;</span><span style="color: #d0d0d0">)</span>
-                            <span style="color: #d0d0d0">chat.AddText(</span> <span style="color: #d0d0d0">White,</span> <span style="color: #ed9d13">&quot;{Project-Zenith} &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">Blue,</span> <span style="color: #ed9d13">&quot;Looks like youre running &quot;</span><span style="color: #d0d0d0">..</span><span style="color: #24909d">tostring</span><span style="color: #d0d0d0">(gmod.GetGamemode().Name)</span> <span style="color: #d0d0d0">)</span>
-                            <span style="color: #d0d0d0">PZGameMode</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">3</span>
-                          <span style="color: #6ab825; font-weight: bold">elseif</span> <span style="color: #d0d0d0">gmod.GetGamemode().Name</span> <span style="color: #d0d0d0">==</span> <span style="color: #ed9d13">&quot;Murder&quot;</span> <span style="color: #6ab825; font-weight: bold">then</span> 
-                            <span style="color: #d0d0d0">PZGameMode</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">4</span>
-                      
-                           <span style="color: #6ab825; font-weight: bold">elseif</span> <span style="color: #d0d0d0">gmod.GetGamemode().Name</span> <span style="color: #d0d0d0">==</span> <span style="color: #ed9d13">&quot;&quot;</span> <span style="color: #6ab825; font-weight: bold">then</span> <span style="color: #24909d">print</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Supported Gamemode not Found&quot;</span><span style="color: #d0d0d0">)</span>
-                          <span style="color: #6ab825; font-weight: bold">else</span>
-                            <span style="color: #d0d0d0">chat.AddText(Red,</span> <span style="color: #ed9d13">&quot;{Project-Zenith}&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">Red,</span> <span style="color: #ed9d13">&quot;Warning:&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">Yellow,</span> <span style="color: #ed9d13">&quot;This gamemode is not currently supported in Project Zenith.&quot;</span><span style="color: #d0d0d0">)</span>
-                          <span style="color: #6ab825; font-weight: bold">end</span>
-                      <span style="color: #999999; font-style: italic">-- GameMode Hud Default Settings for Sandbox</span>
-                      <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">PZGameMode</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span>  <span style="color: #6ab825; font-weight: bold">then</span>
-                      <span style="color: #d0d0d0">PZ.Options[</span><span style="color: #ed9d13">&quot;Health-Bar&quot;</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #6ab825; font-weight: bold">true</span>
-                      <span style="color: #d0d0d0">PZ.Options[</span><span style="color: #ed9d13">&quot;Armor-Bar&quot;</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #6ab825; font-weight: bold">true</span>
-                      <span style="color: #d0d0d0">PZ.Options[</span><span style="color: #ed9d13">&quot;Ammo-Bar&quot;</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #6ab825; font-weight: bold">true</span>
-                      <span style="color: #d0d0d0">PZ.Options[</span><span style="color: #ed9d13">&quot;Profile-Photo&quot;</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #6ab825; font-weight: bold">true</span>
-                      <span style="color: #d0d0d0">PZ.Options[</span><span style="color: #ed9d13">&quot;Speedometer&quot;</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #6ab825; font-weight: bold">true</span>
-                      <span style="color: #6ab825; font-weight: bold">end</span>
-                      </pre></div>
-                      
+                    <h4 class="card-title">Functions</h4>
+                    <hr>
+                    <p class="card-text">Example Functions and appearance of Glua.</p>
+                <pre class="language-lua  line-numbers"><code>-- print(gmod.GetGamemode().Name) -- this is to code/find names for gamemodes :D
+CreateClientConVar( "PZGameMode", "0", false, false ) -- create a variable that we can use to select what gamemode the player is in.
+if gmod.GetGamemode().Name == "Sandbox" then 
+PZGameMode = 1
+chat.AddText( White, "{Project-Zenith} ", Blue, "Looks like youre running "..tostring(gmod.GetGamemode().Name) )
+                  
+elseif gmod.GetGamemode().Name == "DakrRP" then print(".")
+PZGameMode = 2
+chat.AddText( White, "{Project-Zenith} ", Blue, "Looks like youre running "..tostring(gmod.GetGamemode().Name) )
+                  
+elseif gmod.GetGamemode().Name == "Trouble in Terrorist Town" then print(".")
+chat.AddText( White, "{Project-Zenith} ", Blue, "Looks like youre running "..tostring(gmod.GetGamemode().Name) )
+PZGameMode = 3
+elseif gmod.GetGamemode().Name == "Murder" then 
+PZGameMode = 4
+                  
+elseif gmod.GetGamemode().Name == "" then print("Supported Gamemode not Found")
+else
+chat.AddText(Red, "{Project-Zenith}", Red, "Warning:", Yellow, "This gamemode is not currently supported in Project Zenith.")
+end
+-- GameMode Hud Default Settings for Sandbox
+if PZGameMode = 1  then
+PZ.Options["Health-Bar"] = true
+PZ.Options["Armor-Bar"] = true
+PZ.Options["Ammo-Bar"] = true
+PZ.Options["Profile-Photo"] = true
+PZ.Options["Speedometer"] = true
+end
+</code></pre>
+<pre>
+<code class="language-lua  line-numbers">local function killAllPlayers()
+ 	for k,v in pairs(player.GetAll()) do
+ 		v:Kill()
+ 	end
+ end
+ killAllPlayers()</code>
+                        </pre>
                 </div>
               </div>
     </main>
-
-    <script src="https://use.fontawesome.com/b6db600c62.js"></script>
+    <script src="prism.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
