@@ -19,7 +19,7 @@
         width: 100%;
         background-color: black;
        background: url(http://www.baltana.com/files/wallpapers-7/Material-Design-Dark-HD-Background-Wallpaper-23173.png);
-        background-size: 100% 100%;
+        background-size: cover;
         
         
   background-attachment: fixed;
@@ -223,16 +223,13 @@ WhiteSmoke = Color(245,245,245,255);
                 </div>
               </div>
               <br>
-              <div class="card text-center">
-                <div class="card-body">
-                  <h4 class="card-title"></h4>
-
-                </div>
               </div>
               <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Functions</h4>
+                    <h4 class="card-title text-center">Code Snippets</h4>
                     <hr>
+                    <h5 class="card-title text-center">Functions</h5>
+                    <hr style="max-width:75%;">
                     <p class="card-text">Example Functions and appearance of Glua.</p>
                 <pre class="language-lua  line-numbers"><code>-- print(gmod.GetGamemode().Name) -- this is to code/find names for gamemodes :D
 CreateClientConVar( "PZGameMode", "0", false, false ) -- create a variable that we can use to select what gamemode the player is in.
@@ -270,9 +267,20 @@ end
  	end
  end
  killAllPlayers()</code>
-                        </pre>
-                </div>
-              </div>
+</pre>
+<h5 class="card-title text-center">Tables</h5>
+<hr style="max-width:50%;">
+<pre>
+<code class="language-lua  line-numbers">PrintTable( player.GetAll() )</code></pre>
+
+<div class=""> <p class="card-text"> This returns as a table (I know supriseing)</p></div>
+<pre><code class="language-lua line-numbers">1 = [Player][1][Player1]
+2 = [Player][2][Bot01]
+3 = [Player][3][Bot02]</code></pre>
+ <p class="card-text"> But imagine it printing out a Parent entity when inside of the parent there is sub branches and roots (different componets) of the entity the can be called and viewed (for example viewing steamID's or finding distance bwtween players).</p>
+</div>
+</div>
+
     </main>
     <script src="prism.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
