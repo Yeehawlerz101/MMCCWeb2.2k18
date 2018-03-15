@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Brandons Bistro</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="callbutton.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .carousel-item {
+                width: 100%;
+      
+      }
+      .Spacer {
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      body {
+        height: 100%;
+              width: 100%;
+              background-color: black;
+             background: url(https://www.hdwallpapers.in/walls/cyan_magenta_colors-wide.jpg);
+              background-size: cover;
+              
+              
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .card {
+                box-shadow: 3px 5px 5px rgb(0, 0, 0);
+              }
+       
+        </style>
+  </head>
+  
+  <body>
+      <main>
+
+        <section> <!-- NavBar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">Brandons Bistro</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#FoodMenu">Menu <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#HoursOpen">Hours</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#About">About us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+        </section>
+        <section><!-- Phone Call Button/Order by Phone-->
+          <a id="callbutton" href="tel:1888832615" onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});" class="align-middle" >
+            <div class="mobile-button">
+            <div class="call-button">
+                <i class="call-icon fa fa-phone-square fa-3x"></i>
+                  <p class="call-button">Questions? Click to Call</p>
+          </div>
+        </div></a>
+      </section>
+      <div class="Spacer">
+          <!-- Spacer -->
+         </div>
+      <section> <!-- Quote -->
+          <blockquote class="blockquote mb-0">
+              <p>We commit ourselves to great good food</p>
+              <footer class="blockquote-footer">John Adams, <cite title="Source Title">Food Reviewer</cite></footer>
+            </blockquote>
+
+      </section>
+      <section class="mx-auto"tyle="max-width:50%;max-height:50%;"> <!-- Carousel of food -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 h-100" src="chickenstrips.jpeg" alt="First slide" >
+                
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 h-100" src="grilledhamandcheese.jpg" alt="Second slide" >
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 h-100" src="hotwings.jpg" alt="Third slide" >
+              </div>
+            
+            <div class="carousel-item">
+                <img class="d-block w-100 h-100" src="mozsticks.jpg" alt="Fourth slide" >
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </section>
+  
+    <div class="Spacer">
+    <!-- Spacer -->
+    </div>
+    <div id="FoodMenu">
+    <div class="container">
+      <div class="row">
+      <section class="col-sm-2 col-md-3 col-lg-3 col-xl-3"> <!-- Chicken Strips Card-->
+          <div class="card d-none d-sm-block" style="width: 18rem;min-height:15rem;margin-right:45%;">
+              <div class="card-body">
+                <h5 class="card-title text-center">Chicken Strips</h5>
+                <hr>
+                <h6 class="card-subtitle mb-2 text-muted">The finest art of chicken strips</h6>
+                <p class="card-text">Text about Chicken strips</p>
+                <ul>
+                  <li class="card-text">Somthing Witty.</li>
+                  <li class="card-text">Somthing Smart.</li>
+                  <li class="card-text">Somthing Intelligent.</li>
+                </ul>
+
+              </div>
+            </div>
+      </section>
+      <section style="width: 33%;"> <!-- Middle Spacer-->
+
+      </section>
+      <section class="col-sm-2 col-md-3 col-lg-3 col-xl-3"> <!--Grilled Cheese Card -->
+        <div class="card d-none d-sm-block" style="width: 18rem;min-height:15rem;margin-left:45%;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Grilled Cheese</h5>
+              <hr>
+              <h6 class="card-subtitle mb-2 text-muted">Authentic grilled cheese</h6>
+              <p class="card-text">Text about Grilled Cheese</p>
+              <ul>
+                <li class="card-text">Somthing Witty.</li>
+                <li class="card-text">Somthing Smart.</li>
+                <li class="card-text">Somthing Intelligent.</li>
+              </ul>
+
+            </div>
+          </div>
+      </section>
+      </div>
+      <div class="row" >
+        <table id="HoursOpen" class=" table-light table-hover text-center mx-auto"style="margin-left:50%;margin-right:50%;box-shadow: 3px 5px 5px rgb(0, 0, 0); border-radius:9px;" >
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Hours Open</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Monday</th>
+              <td>8:00 AM - 5:30 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">Tuesday</th>
+              <td>8:00 AM - 5:30 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">Wednesday</th>
+              <td>8:00 AM - 5:30 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">Thursday</th>
+              <td>8:00 AM - 5:30 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              <td>8:00 AM - 5:30 PM</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              <td>8:00 AM - 8:00 PM</td>
+            </tr>
+            <th scope="row">Sunday</th>
+            <td>Closed</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4 col-xl-4"> <!--Hot Wings Card-->
+          <div class="card d-none d-sm-block" style="width: 18rem;min-height:15rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">Hot Wings</h5>
+                <hr>
+                <h6 class="card-subtitle mb-2 text-muted">Not just any hot wings</h6>
+                <p class="card-text">Text about Hot Wings</p>
+                <ul>
+                  <li class="card-text">Somthing Witty.</li>
+                  <li class="card-text">Somthing Smart.</li>
+                  <li class="card-text">Somthing Intelligent.</li>
+                </ul>
+  
+              </div>
+            </div>
+      </section>
+      <section style="width: 33%;"> <!-- Middle Spacer-->
+
+      </section>
+      <section class="col-sm-2 col-md-4 col-lg-4 col-xl-4"> <!-- Mozzarella sticks Card-->
+        <div class="card d-none d-sm-block" style="max-width: 18rem;min-height:15rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mozzarella sticks</h5>
+              <hr>
+              <h6 class="card-subtitle mb-2 text-muted">The mozzarella sticks technicians</h6>
+              <p class="card-text">Text about Mozzarella sticks</p>
+              <ul>
+                <li class="card-text">Somthing Witty.</li>
+                <li class="card-text">Somthing Smart.</li>
+                <li class="card-text">Somthing Intelligent.</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+      <section class=""> <!--Menu-->
+        <table class="table-light table-hover text-center mx-auto" style="margin-left:50%;margin-right:50%;box-shadow: 3px 5px 5px rgb(0, 0, 0); border-radius:9px;">
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">Name</th>
+              <th scope="col">Calories</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Chicken Strip Basket</td>
+              <td>895</td>
+              <td>$8.95</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Grilled Cheese</td>
+              <td>570</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Hot Wings</td>
+              <td>780</td>
+              <td>$4.50</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mozzarella Sticks</td>
+              <td>325</td>
+              <td>$2.19</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div class="Spacer">
+      <!-- Spacer -->
+      </div>
+    <section>
+      <div class="card mx-auto">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+          <h4 class="card-title text-center">About Us</h4>
+          <hr>
+          <p class="card-text">Eat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry. Latter law remark two lively thrown. Spot set they know rest its. Raptures law diverted believed jennings consider children the see. Had invited beloved carried the colonel. Occasional principles discretion it as he unpleasing boisterous. She bed sing dear now son half. 
+
+            Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he. 
+            
+            Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments thoroughly unsatiable terminated sex how themselves. She are ten hours wrong walls stand early. Domestic perceive on an ladyship extended received do. Why jennings our whatever his learning gay perceive. Is against no he without subject. Bed connection unreserved preference partiality not unaffected. Years merit trees so think in hoped we as. </p>
+            <hr>
+
+            <p class="card-text">In no impression assistance contrasted. Manners she wishing justice hastily new anxious. At discovery discourse departure objection we. Few extensive add delighted tolerably sincerity her. Law ought him least enjoy decay one quick court. Expect warmly its tended garden him esteem had remove off. Effects dearest staying now sixteen nor improve. 
+
+              John draw real poor on call my from. May she mrs furnished discourse extremely. Ask doubt noisy shade guest did built her him. Ignorant repeated hastened it do. Consider bachelor he yourself expenses no. Her itself active giving for expect vulgar months. Discovery commanded fat mrs remaining son she principle middleton neglected. Be miss he in post sons held. No tried is defer do money scale rooms. 
+              
+              Arrival entered an if drawing request. How daughters not promotion few knowledge contented. Yet winter law behind number stairs garret excuse. Minuter we natural conduct gravity if pointed oh no. Am immediate unwilling of attempted admitting disposing it. Handsome opinions on am at it ladyship. 
+              
+              Can curiosity may end shameless explained. True high on said mr on come. An do mr design at little myself wholly entire though. Attended of on stronger or mr pleasure. Rich four like real yet west get. Felicity in dwelling to drawings. His pleasure new steepest for reserved formerly disposed jennings. 
+              </p>
+        </div>
+      </div>
+    </section>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

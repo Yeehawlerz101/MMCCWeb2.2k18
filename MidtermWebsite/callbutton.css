@@ -1,0 +1,60 @@
+
+@media (min-width: 20px) {
+    .mobile-button {
+      display: none;
+    }
+    }
+    
+    
+    @media (max-width: 9999999px) {
+    .mobile-button {
+    max-width: 140px;
+    height: 45px;
+    background-color: #000DFF;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: solid 1px #000DFF;
+    border-bottom-width: 0px;
+    border-width: 2px;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    position: fixed;
+    vertical-alignment: bottom;
+    z-index: 999;
+    text-align: center;
+    }
+    
+    .call-icon {
+        float: left;
+        color: #ffffff;
+    }
+    
+    .call-button {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5px 0 5px;
+    }
+    
+    .call-button p {
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 600;
+        position: relative;
+        line-height: 1.4;
+        top: 3px;
+    }
+    .call-button a {
+    text-decoration: none;
+    }
+    
+    #callbutton {
+    display: block;
+    }
+    }
