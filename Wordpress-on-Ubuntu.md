@@ -2,7 +2,6 @@
 ##### Created By Neil Master
 ###### This is for Ubuntu 14.04 and Currently works on 4/3/18
 ## Simple Unix Controls for setup
----
 Useful keyboard buttons:  
 * Spacebar (for selecting)
 * Tab (for moving between fields)
@@ -10,22 +9,31 @@ Useful keyboard buttons:
 * Escape (for going back)
 * Enter (for going forward)
 
-Installed VirtualBox
-Create a new VM
-Create Ubuntu 64bit and use all recommendations (you may want to use Expert mode to save to the thawspace)
-Before starting…
-Click settings
-Go to Network section
-Switch from NAT to Bridged Adaptor
-Start the VM
-Install Ubuntu
-When prompted, connect to the ISO you downloaded
-If your keyboard/mouse are captured you can use the Command/Option keys 
-together to get out
-Hit enter a bunch
-Create your user account “Brandon Kish” and “bkish”
-Don’t encrypt your home directory
-Use whole disk and LVM
-Arrow over to Yes to go with recommendations
-Hit enter to accept the 8.3 GB size
-Arrow to Yes to write changes to disk
+---
+* Install VirtualBox
+* Create a new VM
+* Create Ubuntu 64bit and use all recommendations (you may want to use Expert mode to save to the thawspace)
+* Before starting…
+* Click settings
+* Go to Network section
+* Switch from NAT to Bridged Adaptor
+* Start the VM
+* Install Ubuntu
+* When prompted, connect to the ISO you downloaded
+* If your keyboard/mouse are captured you can use the Command/Option keys 
+* Hit enter (most default settings will work for now)
+* Create your user account “User123” and “user123” password will be "password".
+* Don’t encrypt your home directory
+* Use "Guided - use entire disk and setup LVM
+* Arrow over to Yes to go with recommendations
+* Hit enter to accept the allocated size
+* Arrow to Yes to write changes to disk
+* Do not select proxy settings
+* Select the OpenSSH package **with the space bar** (we can use this with putty)
+* Login and run the following commands
+
+```Unix
+sudo apt-get dist-upgrade
+
+ifconfig
+```
