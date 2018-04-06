@@ -201,7 +201,7 @@ define('NONCE_SALT',       '0W:<{%n^=cCk1sVC_S)d@U|($!q8#*e}4z$jbFi,n>sbG+Ta.YSJ
 nano /var/www/html/wp-config.php
 ```
 * And replace them with the current existing ones.
-* Next place the Database connection settings inside of that same file, preferably at the bottom of the file.
+* Next place the Database connection settings inside of the pre existing commands.
 ```
 define('DB_NAME', 'wordpress');
 define('DB_USER', 'wordpressdude');
