@@ -9,13 +9,13 @@ Useful keyboard buttons:
 * Escape (for going back)
 * Enter (for going forward)
 ---
-* Install VirtualBox
+Prerequisites:
+>Working VirtualBox installation.
+
+>Bootable Ubuntu 14.04 Server ISO.
 * Create a new VM
-* Create Ubuntu 64bit and use all recommendations (you may want to use Expert mode to save to the thawspace)
-* Before starting…
-* Click settings
-* Go to Network section
-* Switch from NAT to Bridged Adaptor
+* Create Ubuntu 64bit and use all recommendations.
+ ###### Before starting Click settings Go to Network section Switch from NAT -> Bridged Adaptor
 
 * Start the VM
 * Install Ubuntu
@@ -24,13 +24,13 @@ Useful keyboard buttons:
 * Hit enter (most default settings will work for now)
 * Create your user account “User123” and “user123” password will be "password".
 * Don’t encrypt your home directory
-* Use "Guided - use entire disk and setup LVM"
+* Use "Guided-use entire disk and setup LVM"
 * Arrow over to Yes to go with recommendations
 * Hit enter to accept the allocated size
 * Arrow to Yes to write changes to disk
 * Do not select proxy settings
 * Select the OpenSSH package **with the space bar** (we can use this with putty)
-* Select and allow the GRUB Boot loader
+* Select and allow the GRUB Bootloader
 * Login and run the following commands
 ```
 sudo apt-get dist-upgrade
@@ -39,11 +39,11 @@ sudo apt-get update
 sudo apt-get install apache2
 sudo apache2ctl configtest
 ```
-* Open up the main configuration file with your text editor with 
+* Open up the main configuration file with your text editor with:
 ```
 sudo nano /etc/apache2/apache2.conf
 ```
-* Enter this following line at the end of the config file
+* Enter this following line at the end of the config file.
 ```
 ServerName "IP-Address-or-Domain-Goes-Here-Without-Quotes"
 ```
@@ -60,11 +60,11 @@ sudo systemctl restart apache2
 ```
 sudo ufw allow in "Apache Full"
 ```
-* You now should be able to view the base html from apache from visiting your VM's IP address or domain.
+* You now should be able to view the base HTML from apache by visiting your VM's IP address or domain.
 ``` http://your_server_IP_address```
 ## Installing MySQL
 ```
-sudo apt-get install mysql-server
+sudo apt-get install MySQL-server
 ```
 * Enable secure settings for users.
 ```
@@ -76,13 +76,13 @@ y, no, no, y
 ```
 ## Installing PHP
 ```
-sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+sudo apt-get install php libapache2-mod-PHP PHP-mcrypt PHP-MySQL
 ```
-* Edit the config to make php load first rather than the html version.
+* Edit the config to make php load first rather than the HTML version.
 ```
 sudo nano /etc/apache2/mods-enabled/dir.conf
 ```
-* Remove **All** of the content inside of the file and paste this
+* Remove **All** of the content inside of the file and paste this:
 ```
 <IfModule mod_dir.c>
     DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
