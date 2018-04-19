@@ -76,7 +76,7 @@ y, no, no, y
 ```
 ## Installing PHP
 ```
-sudo apt-get install php libapache2-mod-PHP PHP-mcrypt PHP-MySQL
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
 ```
 * Edit the config to make php load first rather than the HTML version.
 ```
