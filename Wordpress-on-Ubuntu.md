@@ -64,7 +64,7 @@ sudo ufw allow in "Apache Full"
 ``` http://your_server_IP_address```
 ## Installing MySQL
 ```
-sudo apt-get install MySQL-server
+sudo apt-get install mysql-server
 ```
 * Enable secure settings for users.
 ```
